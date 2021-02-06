@@ -10,6 +10,7 @@ public class Palindrome {
 		int rev = 0 ;
 		System.out.println("Enter Three Digit Number: ");
 		int number = sc.nextInt();
+		int temp = number;
 		int rem =number%10;
 		number/=10;
 		rev = rev*10+rem;
@@ -19,7 +20,8 @@ public class Palindrome {
 		rem = number%10;
 		number/=10;
 		rev = rev*10+rem;
-		System.out.println("Palindrome: "+rev);
+		System.out.println(Integer.compare(temp,rev));
+		//System.out.println(temp.compareTo(rev));
 		sc.close();
 	}
 

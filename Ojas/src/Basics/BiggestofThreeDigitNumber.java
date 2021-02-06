@@ -8,11 +8,15 @@ public class BiggestofThreeDigitNumber {
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter First Number: ");
-		int num1 = sc.nextInt();
-		System.out.println("Enter Second Number: ");
-		int num2 = sc.nextInt();
-		System.out.println("Enter Three Number: ");
-		int num3 = sc.nextInt();
+		int num = sc.nextInt();
+		int num1,num2,num3;
+		 	num1 =  num%10;
+		 		num/=10;
+			num2 =  num%10;
+				num/=10;
+			num3 =  num%10;
+				num/=10;
+			
 		if(num1 > num2)
 			System.out.println("The Biggest Number is: "+num1);
 		else if(num2 > num3)
