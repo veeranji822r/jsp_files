@@ -13,6 +13,7 @@ public class ConvertBinaryToDecimalAndDecimalToBinary {
 		System.out.println("Enter Decimal Number: ");
 		int Decimal = sc.nextInt();
 		decimalToBinary(Decimal);
+		sc.close();
 	}
 	 public static int power(int value,int sqer)
 	    {

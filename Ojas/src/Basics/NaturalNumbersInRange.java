@@ -14,7 +14,7 @@ public class NaturalNumbersInRange {
 		{
 			natural+=i+",";
 		}
-		System.out.println(natural);
+		System.out.println(natural.substring(0, natural.length() - 1));
 		sc.close();
 	}
 }
